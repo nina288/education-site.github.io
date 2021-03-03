@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+  margin-bottom: 20px;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+}
+.logo-name {
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+  font-family: 'Radley', serif;
+  text-transform: uppercase;
+  color: #19121e;
+}
+.logo-description {
+  position: relative;
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #a1787e;
+}
+.logo-description:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #a1787e;
+  z-index: -1;
+}
+.logo-description span {
+  padding-left: 10px;
+  background-color: white;
+}
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100px;
+}
+#navbar a {
+  background-color: #949494;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-left: 5px solid #33ADFF;
+  display: block;
+}
+#navbar li {
+  border-left: 10px solid #666;
+  border-bottom: 1px solid #666;
+}
+#navbar a:hover {
+  background-color: #666;
+  border-left: 5px solid #3333FF;
+}
+
+.grid {
+  margin-bottom: 20px;
+}
+.grid-item {
+  width: 100%;
+  padding: 10px; 
+}
+.grid-item a {
+  display: block;
+}
+.grid-item img {
+  display: block;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: .5s ease-in-out;
+}
+.grid-item a:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+ 
+
+   
+  
+ 
+  .text{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-shadow: gray 0 0 2px;
+  color: gray;
+  }
+
+  .footer-row {
+  padding: 20px 0;
+  border-top: 2px solid #d9d9d9;
+}
+.footer-col { 
+  padding: 0 10px; 
+}
+.footer-col:first-child {
+  text-align: center;
+}
+
+
+
+@media (min-width: 480px) {
+  .grid,
+  .footer-row {
+    display: flex;
+  }
+  .grid-item,
+  .footer-col {
+    width: 50%;
+  }
+  
+  .footer-col:first-child {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .grid-item {
+    width: 33.33333333333333%;
+  }
+ 
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+ 
